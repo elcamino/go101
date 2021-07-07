@@ -82,6 +82,13 @@ func slices() {
 
 	// Length
 	fmt.Printf("made slice len: %d, made slice cap: %d\n", len(madelist), cap(madelist))
+
+	// append to a slice
+	ids := make([]string, 0)
+	for i := 0; i < 10; i++ {
+		ids = append(ids, fmt.Sprintf("%d", rand.Uint32()))
+	}
+	pretty.Println(ids)
 }
 
 func Run() {
