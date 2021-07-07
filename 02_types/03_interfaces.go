@@ -27,7 +27,7 @@ func (r rect) perim() float64 {
 	return 2*r.width + 2*r.height
 }
 
-// circle represents a, you guessed it, circle and also implements the geometry interface
+// circle represents a, you guessed it: circle and also implements the geometry interface
 type circle struct {
 	radius float64
 }
@@ -39,12 +39,10 @@ func (c circle) perim() float64 {
 	return 2 * math.Pi * c.radius
 }
 
-// measure prints the area and perimeter of a geometry interface
+// printMeasurements prints the area and perimeter of a geometry interface
 //
-func measure(g geometry) {
-	fmt.Printf("%s = %v\n", reflect.TypeOf(g), g)
-	fmt.Println(g.area())
-	fmt.Println(g.perim())
+func printMeasurements(g geometry) {
+	fmt.Printf("%s = %v - area: %f - perimeter: %f\n", reflect.TypeOf(g), g, g.area(), g.perim())
 }
 
 func emptyInterface() {
@@ -79,8 +77,8 @@ func interfaceDemo() {
 	r := rect{width: 3, height: 4}
 	c := circle{radius: 5}
 
-	measure(r)
-	measure(c)
+	printMeasurements(r)
+	printMeasurements(c)
 }
 
 func Interfaces() {

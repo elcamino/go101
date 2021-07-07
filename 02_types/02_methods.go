@@ -31,6 +31,7 @@ func (u *User) NameAndEmail() (string, string) {
 	return fmt.Sprintf("%s %s", u.FirstName, u.LastName), u.Email
 }
 
+// private method: only visible within User
 func (u *User) buildFullEmailAddress() string {
 	return fmt.Sprintf("%s <%s>", u.Name(), u.Email)
 }
