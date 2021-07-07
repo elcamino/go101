@@ -37,14 +37,14 @@ func Types() {
 
 	// Maps
 	//
-	products := map[string]float32{
+	prices := map[string]float32{
 		"Coca Cola 1l":  1.9,
 		"Pepsi Cola 1l": 1.87,
 		"Dr. Pepper 1l": 1.87,
 		"Fanta 1l":      0.99,
 	}
 
-	for k, v := range products {
+	for k, v := range prices {
 		fmt.Printf("%s = €%.2f\n", k, v)
 	}
 

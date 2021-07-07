@@ -2,6 +2,8 @@ package basic
 
 import "fmt"
 
+func xyz() string { return "xyz " }
+
 func Consts() {
 	// default type is bool
 	const isOpen = true
@@ -15,6 +17,10 @@ func Consts() {
 	const complexNumber = 1 + 2i
 	// default type is string
 	const hotelName = "Gopher Hotel"
+
+	// const can only be a primitive type
+	//const doesntWork = xyz()
+	//const mapDoesntWork = map[string]string{}
 
 	// consts are unlimited
 	const profit = 9223372036854775808
