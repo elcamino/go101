@@ -33,7 +33,7 @@ func Consts() {
 		HOUSE
 		CHALET
 		VILLA
-		BOAT
+		BOAT = iota
 		TREEHOUSE
 	)
 	const (
@@ -44,11 +44,11 @@ func Consts() {
 	fmt.Printf("HOTEL = %d\n", HOTEL)
 	fmt.Printf("BNB = %d\n", BNB)
 	fmt.Printf("ROOM = %d\n", ROOM)
+	fmt.Printf("HOUSE = %d\n", HOUSE)
 	fmt.Printf("CHALET = %d\n", CHALET)
 	fmt.Printf("VILLA = %d\n", VILLA)
 	fmt.Printf("BOAT = %d\n", BOAT)
 	fmt.Printf("TREEHOUSE = %d\n", TREEHOUSE)
 	fmt.Printf("URBAN = %d\n", URBAN)
 	fmt.Printf("RURAL = %d\n", RURAL)
-
 }
